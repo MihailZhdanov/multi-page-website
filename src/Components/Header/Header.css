@@ -75,8 +75,12 @@
   .header-menu-btn {
     display: block;
     margin-right: 30px;
+    
   }
 
+  .header-menu-btn:focus{
+    outline: none;
+  }
 
   .header-nav-list {
     flex: 1;
