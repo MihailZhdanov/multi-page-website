@@ -1,0 +1,60 @@
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  min-height: 100vh; 
+  background-color: #f0f4f8; 
+  text-align: center; 
+  font-family: 'Arial', sans-serif; 
+  width: 100vw;
+  height: 50vw;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.home h1 {
+  font-size: 80px; 
+  color: #333; 
+  margin-bottom: 20px; 
+}
+
+.home p {
+  font-size: 40px; 
+  color: #555; 
+  margin-bottom: 30px; 
+  max-width: 800px; 
+}
+
+.img {
+  width: 100%; 
+  max-width: 400px; 
+  border-radius: 50px; 
+  overflow: hidden; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.im {
+  width: 100%; 
+  height: 100%; 
+  transition: transform 0.7s ease; 
+}
+
+.im:hover {
+  transform: scale(1.1); 
+}
+
+@media screen and (max-width: 768px) {
+  .img{ 
+    width: 200px;
+  }
+
+  .home h1{
+    font-size: 40px;
+  }
+  .home p {
+    font-size: 20px;
+    width: 400px;
+  }
+}

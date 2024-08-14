@@ -1,0 +1,75 @@
+body{
+    overflow-x: hidden;
+}
+
+.todos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#f0f4f8 ;
+    width:100vw;
+    min-height: 100vw;
+    padding-bottom: 40px;
+    padding-top: 0px;
+    
+}
+
+.title-todos{
+    font-size: 50px;
+    color: #333;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.todos-grid{
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    
+}
+
+
+.todos {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todos:hover {
+    transform: translateY(-5px);
+}
+
+.todos h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+.todos input{
+    cursor: pointer; /* Курсор указывает на возможность клика */
+    transform: scale(1.5); 
+}
+
+
+@media screen and (max-width:764px) {
+    .todos-grid{
+        width: 350px;
+    }
+
+    .title-todos{
+        font-size: 50px;
+        margin-top: 70px;
+    }
+
+    .todos h3{
+        font-size: 17px;
+    }
+}
+
+
